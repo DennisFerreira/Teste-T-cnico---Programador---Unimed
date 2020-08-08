@@ -9,7 +9,7 @@ group by cidade;
 --2) RETORNAR OS ENDEREÇOS QUE NÃO POSSUEM CLIENTES CADASTRADOS 
 
 select * 
-from endereco_cliente end_cli 
+from endereco_cliente 
 where id not in (select id from cliente);
 
 --3) RETORNAR OS ENDEREÇOS COMPLETOS DE CLIENTES EM UMA UNICA COLUNA 
